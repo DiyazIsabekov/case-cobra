@@ -2,6 +2,8 @@ import Image from "next/image";
 import MaxWidthWrapper from "./components/MaxWidthWrapper";
 import { Check, Star } from "lucide-react";
 import Phone from "./components/Phone";
+import { Icons } from "./components/Icons";
+import { Reviews } from "./components/Reviews";
 
 export default function Home() {
   return (
@@ -17,26 +19,25 @@ export default function Home() {
                 <img src="/snake-1.png" alt="" className="w-full" />
               </div>
               <h1 className="relative w-fit tracking-tight text-balance mt-16 font-bold !leading-tight
-               text-gray-900 text-5xl md:text-6xl lg:text-7xl">Your image on a<span className="bg-green-600 px-2 text-white"> Custom </span>
-                Phone case</h1>
+               text-gray-900 text-5xl md:text-6xl lg:text-7xl">Ваше изображение на <span className="bg-green-600 px-2 text-white">изготовленном на заказ</span> чехле для телефона</h1>
               <p className="mt-8 text-lg lg:pr-10 max-w-prose text-center lg:text-left text-balance md:text-wrap">
-                Capture your favorite memories with your own, <span className="font-semibold">one-of-one</span> phone case.
-                CaseCobra allows you to protect your memories, not just phone case.
+                Сохраните ваши любимые воспоминания с помощью <span className="font-semibold">собственного, уникального</span> чехла для телефона
+                CaseCobra позволяет защитить ваши воспоминания, а не только чехол для телефона.
               </p>
 
               <ul className="mt-8 space-y-2 text-left font-medium flex flex-col items-center sm:items-start">
                 <div className="space-y-2">
                   <li className="flex gap-1.5 items-center text-left">
                     <Check className="h-5 w-5 shrink-0 text-green-600" />
-                    High quality, durable material
+                    Высококачественный и прочный материал
                   </li>
                   <li className="flex gap-1.5 items-center text-left">
                     <Check className="h-5 w-5 shrink-0 text-green-600" />
-                    5 year print guarantee
+                    Гарантия печати 5 лет
                   </li>
                   <li className="flex gap-1.5 items-center text-left">
                     <Check className="h-5 w-5 shrink-0 text-green-600" />
-                    Modern Iphone models supported
+                    Поддерживаются современные модели Iphone
                   </li>
                 </div>
               </ul>
@@ -70,7 +71,7 @@ export default function Home() {
                     <Star className="h-4 w-4 text-green-600 fill-green-600" />
                     <Star className="h-4 w-4 text-green-600 fill-green-600" />
                   </div>
-                  <p><span className="font-semibold">1.250</span> happy customers</p>
+                  <p><span className="font-semibold">1.250</span> счастливых клиентов</p>
                 </div>
               </div>
             </div>
@@ -88,6 +89,80 @@ export default function Home() {
             </div>
           </div>
         </MaxWidthWrapper>
+      </section>
+
+
+
+      {/* Value proposition section */}
+      <section className="bg-slate-10 py-24">
+        <MaxWidthWrapper className="flex flex-col items-center gap-16 sm:gap-32">
+          <div className="flex flex-col lg:flex-flow items-center gap-4 sm:gap-6">
+            <h2 className="order-1 mt-2 tracking-tight text-center
+             text-balance !leading-tight font-bold text-5xl md:text-6xl text-gray-900"
+            >
+              Что говорят наши <span className="relative px-2">клиенты?
+                <Icons.underline className="hidden sm:block pointer-events-none absolute inset-x-0 -bottom-6 text-green-500" /></span></h2>
+            <img src="/snake-2.png" alt="snake2" className="w-24 order-0 lg:order-2" />
+          </div>
+
+          <div className="mx-auto grid max-w-2xl grid-cols-1 px-4 lg:mx-0 lg:max-w-none lg:grid-cols-2 gap-y-16">
+            <div className="flex flex-auto flex-col gap-4 lg:pr-8 xl:pr-20">
+              <div className="flex gap-0.5 mb-2">
+                <Star className="h-5 w-5 text-green-600 fill-green-600" />
+                <Star className="h-5 w-5 text-green-600 fill-green-600" />
+                <Star className="h-5 w-5 text-green-600 fill-green-600" />
+                <Star className="h-5 w-5 text-green-600 fill-green-600" />
+                <Star className="h-5 w-5 text-green-600 fill-green-600" />
+              </div>
+              <div className="text-lg leading-8">
+                <p>
+                  "Чехол на ощупь прочный, и я даже получила комплимент по поводу дизайна. Пользуюсь чехлом уже два с половиной месяца, и <span className="p-0.5 bg-slate-800 text-white">изображение очень четкое</span>, в то время как на чехле,
+                  который был у меня раньше, изображение начало приобретать желтоватый оттенок через пару недель. Очень нравится."
+                </p>
+              </div>
+              <div className="flex gap-4 mt-2">
+                <img src="/users/user-1.png" alt="user" className="rounded-full h-12 w-12 object-cover " />
+                <div className="flex flex-col">
+                  <p className="font-semibold">Jonathan</p>
+                  <div className="flex gap-1.5 items-center text-zinc-600">
+                    <Check className="h-4 w-4 stroke-[3px] text-green-600" />
+                    <p className="text-sm">Подтвержденная покупка</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-auto flex-col gap-4 lg:pr-8 xl:pr-20">
+              <div className="flex gap-0.5 mb-2">
+                <Star className="h-5 w-5 text-green-600 fill-green-600" />
+                <Star className="h-5 w-5 text-green-600 fill-green-600" />
+                <Star className="h-5 w-5 text-green-600 fill-green-600" />
+                <Star className="h-5 w-5 text-green-600 fill-green-600" />
+                <Star className="h-5 w-5 text-green-600 fill-green-600" />
+              </div>
+              <div className="text-lg leading-8">
+                <p>
+                  "Обычно я ношу свой телефон вместе с ключами в кармане, и это привело к появлению довольно
+                  сильных царапин на моем последнем чехле для телефона. На этом, помимо едва заметной царапины на углу, <span className="p-0.5 bg-slate-800 text-white">спустя полгода выглядит совершенно новым</span>. Очень круто."
+
+                </p>
+              </div>
+              <div className="flex gap-4 mt-2">
+                <img src="/users/user-4.jpg" alt="user" className="rounded-full h-12 w-12 object-cover " />
+                <div className="flex flex-col">
+                  <p className="font-semibold">Matthew</p>
+                  <div className="flex gap-1.5 items-center text-zinc-600">
+                    <Check className="h-4 w-4 stroke-[3px] text-green-600" />
+                    <p className="text-sm">Подтвержденная покупка</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </MaxWidthWrapper>
+
+        <div className="pt-16">
+          <Reviews />
+        </div>
       </section>
     </div>
   );
